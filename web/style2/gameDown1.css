@@ -1,0 +1,108 @@
+/*banner*/
+.banner{ width:741px; height:auto; float:left; margin-top:2px;}
+
+/*game down*/
+.gameDown{ width:741px; height:auto; float:left; margin-top:10px;}
+.gameDown .left,.gameDown .right{ width:367px; height:172px;  background:url(../images/gameBg.jpg) no-repeat;}
+.gameDown .left{ background-position:0 -83px;float:left;}
+.gameDown .left .l{ width:122px; height:50px; float:left; padding-top:120px;}
+.gameDown .left .l .btn{ width:94px; height:32px; float:left; background:url(../images/gameBg.jpg) 0 -255px no-repeat; margin-left:14px; border:0; cursor:pointer;}
+.gameDown .left .r{ width:245px; height:102px; float:left; padding-top:70px;}
+.gameDown .left .r li{ width:240px; line-height:21px; float:left; display:inline; color:#194e6e;}
+.gameDown .right{ background-position:-374px -83px; float:right;}
+.gameDown .right .l{ width:122px; height:50px; float:left; padding-top:120px;}
+.gameDown .right .l .btn{ width:94px; height:32px; float:left; background:url(../images/gameBg.jpg) 0 -255px no-repeat; margin-left:14px; border:0; cursor:pointer;}
+.gameDown .right .r{ width:245px; height:102px; float:left; padding-top:70px;}
+.gameDown .right .r li{ width:240px; line-height:21px; float:left; display:inline; color:#194e6e;}
+
+
+.gamelist{ width:741px; height:auto; float:left; margin-top:5px;}
+.gamelist .title{ width:696px; height:52px; background:url(../images/gameBg.jpg) 0 -287px no-repeat; float:left; line-height:48px; padding-left:45px; font-size:14px; font-weight:bold; color:#336699;}
+.gamelist .box{ width:741px; height:auto; background:url(../images/gamelistBg.gif) repeat-y;float:left; }
+.gamelist .box dl{float:left;width: 210px;display: inline;margin:0 0 0 26px;padding:10px 0px 15px 0px;}
+.gamelist .box dt{display: inline;width: 207px;float: left;}
+.gamelist .box dd{display: inline;width: 210px;float: left;margin:7px 0 0 0;text-align:center;}
+.gamelist .box .btn{ width:60px; height:21px; line-height:21px;text-align:center; float:left; background:url(../images/gameBg.jpg) -94px -255px no-repeat;}
+.gamelist .box a:link,.gamelist .box a:active,.gamelist .box a:visited,.gamelist .box a:hover {color: #0069ce;text-decoration:underline; margin-right:5px;}
+.gamelist .box1 ul{ width:700px; float:left; margin-left:14px; margin-top:10px; padding:0; display:inline;}
+.gamelist .box1 li{ width:140px; line-height:22px; float:left; display:inline;}
+.gamelist .box1 a:link,.gamelist .box1 a:active,.gamelist .box1 a:visited {margin-right: 4px;margin-left: 4px;color: #1163ac;text-decoration: underline;}
+.gamelist .bottom{ width:741px; height:10px; float:left; background:url(../images/gameBg.jpg) 0 -338px no-repeat;}
+
+/*game detail information*/
+.gameViewBox{ width:741px; height:auto; float:left;}
+.gameViewBox .title{ width:711px; height:34px; float:left; background:url(../images/gameView.png) 0 0 no-repeat; line-height:34px; padding-left:30px; color:#336699;}
+.gameViewBox .title a { text-decoration:none;color:#336699;}
+.gameViewBox .title a:hover{ text-decoration:underline;color:#ba2636;}
+.gameViewBox .box{ width:691px; background:url(../images/gameViewBg.gif) repeat-y; float:left; padding:15px 25px;}
+.gameViewBox .box span{text-align:center; width:691px; margin-bottom:10px; float:left;}
+.gameViewBox .box label{ width:691px; height:32px; float:left; text-align:center;margin-bottom:10px; }
+.gameViewBox .box label .YXdown,.gameViewBox .box label .DTdown{ width:94px; height:32px; border:none; background:url(../images/gameView.png) no-repeat; cursor:pointer;}
+.gameViewBox .box label .YXdown{ background-position:-1px -45px;}
+.gameViewBox .box label .DTdown{ background-position:-98px -45px;}
+.gameViewBox .box h1{ height:25px; width:676px; background:url(../images/gameView.png) -205px -49px no-repeat;padding-left:15px; border-bottom:1px dashed #ccc; font-weight:bold; line-height:25px; margin-bottom:10px; font-size:12px; overflow:hidden;}
+.gameViewBox .box p{ width:691px;line-height:22px; margin-bottom:7px;}
+.gameViewBox .box h2{font-size:12px; width:691px;line-height:22px; margin-bottom:7px;}
+.gameViewBox .bottom{ width:741px; height:10px; float:left; background:url(../images/gameView.png) 0 -34px no-repeat;}
+
+/*online recharge*/
+.recharge{ width:741px; height:auto; float:left;}
+.recharge .title,.regBox .title{ width:696px; height:52px;  float:left; line-height:48px; padding-left:45px; font-size:14px; font-weight:bold; color:#336699;}
+.recharge .box{ width:691px;  float:left; padding:15px 25px;}
+.recharge .box p{ width:691px; float:left; margin-bottom:10px; padding:0;line-height:22px;}
+.recharge .box h1{ width:671px;line-height:25px; float:left; background:url(../images/gameBg.jpg) -355px -260px no-repeat; border-bottom:1px dashed #ccc; font-size:14px; margin:20px 0; padding-left:20px;}
+.recharge .box h2{ width:671px;line-height:25px; float:left; background:url(../images/gameBg.jpg) -355px -260px no-repeat; border-bottom:1px dashed #ccc; font-size:14px; margin:20px 0 10px 0; padding-left:20px;}
+.recharge .box h4{ width:671px;line-height:25px; float:left; background:url(../images/gameBg.jpg) -355px -260px no-repeat; border-bottom:1px dashed #ccc; font-size:14px; margin:0px 0 10px 0; padding-left:20px;}
+.recharge .box h3{ font-size:12px; float:left;width:691px; line-height:20px; color:#555; font-weight:normal;}
+.recharge .box .form{ width:600px; float:left; margin-left:10px; display:inline; margin-bottom:10px;}
+.recharge .box .form input{ width:140px; height:20px; float:left; border:1px solid #666; line-height:20px;}
+.recharge .box .form label{ width:80px; height:30px; float:left; line-height:27px; text-align:right;}
+.recharge .box .form b{ width:150px; float:left;font-size:12px; font-weight:normal; line-height:26px; border:none; display:inline;}
+.recharge .box .form .sure{width:94px; height:32px; border:none; background:url(../images/gameBg.jpg) 0 0 no-repeat; cursor:pointer; margin-left:80px;}
+.recharge .bottom,.regBox .bottom{ width:741px; height:10px; float:left; overflow:hidden;}
+
+/*online bank*/
+.bank{ width:690px; height:96px; float:left; background:url(../images/bank.jpg) no-repeat; padding-top:55px;}
+.bank span{ width:330px; line-height:20px; float:left; margin-left:22px; color:#666; margin-bottom:15px;}
+.bank .helpBtn,.bank .bankBtn{width:94px; height:32px; border:none; background:url(../images/gameBg.jpg) no-repeat; cursor:pointer;}
+.bank .helpBtn{ background-position:-159px -255px; margin-right:20px;}
+.bank .bankBtn{ background-position:-256px -255px;}
+
+/*activite information*/
+.actbox{ width:691px; background:url(../images/gameViewBg.gif) repeat-y; float:left; padding:10px 25px 5px 25px;}
+.actList{ width:677px; height:153px; float:left; background:url(../images/actBg.jpg) no-repeat; margin-left:7px; margin-bottom:15px; display:inline;}
+.actList .left{ width:182px; float:left; margin:25px 0 0 25px; line-height:28px; text-align:center; display:inline;}
+.actList .left a{ font-size:14px; font-weight:bold; text-decoration:none; color:#000;}
+.actList .left a:hover{ text-decoration:underline; color:#ba2636;}
+.actList .right{ width:430px; float:left; margin-left:20px; margin-top:25px;}
+.actList .right h1{ width:415px; height:20px; float:left; font-size:12px; color:#007eff; background:url(../images/gameBg.jpg) -4px -33px no-repeat; padding-left:15px; border-bottom:1px dashed #ccc; margin-bottom:5px;}
+.actList .right p{ width:430px; line-height:20px; color:#666; float:left;margin:0;}
+.actList .right .btn{width:94px; height:32px; border:none; background:url(../images/gameBg.jpg) -94px 0 no-repeat; cursor:pointer; float:right; margin-top:6px;}
+
+/*register page*/
+.regBox{width:741px; height:auto; margin:auto;}
+.regBox td{ height:40px;}
+.regBox .text{ width:200px; height:20px; line-height:20px; padding:2px; float:left; background:url(../images/gameBg.jpg) -274px 0 no-repeat; border:1px solid #bcbcbc;}
+.regBox .tdTitle{ float:left; width:684px; height:24px; line-height:26px; background:#f7f9fd; border-bottom:1px solid #bad7e5; padding-left:7px; font-size:14px; color:#0960a9; font-weight:bold; margin-bottom:10px;}
+.regBox .btn{ width:62px; height:25px; float:left; background:url(../images/gameBg.jpg) -480px 0 no-repeat; border:none; cursor:pointer;}
+.regBox .btn1{ width:86px; height:33px;background:url(../images/gameBg.jpg) -188px 0 no-repeat; line-height:33px; text-align:center; color:#058115; font-size:14px; border:none; font-weight:bold; cursor:pointer;}
+	/*safe grade*/
+	.safe0,.safe1,.safe2,.safe3 {height: 21px;width: 206px;float: left;}
+	.safe0 {background: url(../images/safe.gif) 0px 0px no-repeat;}
+	.safe1 {background: url(../images/safe.gif) 0px -21px no-repeat;}
+	.safe2 {background: url(../images/safe.gif) 0px -42px no-repeat;}
+	.safe3 {background: url(../images/safe.gif) 0px -63px no-repeat;}
+
+/*news detail information*/
+.newsTitle{width:691px; height:40px; text-align:center; float:left; border-bottom:1px dashed #ccc; line-height:40px; font-size:18px; font-family:Verdana; font-weight:bold;}
+.newsTime{width:691px; height:30px; text-align:center; line-height:30px; float:left; color:#555; margin-bottom:10px;}
+.newsBox{width:691px; float:left; line-height:24px;height:auto!important; min-height:618px;}
+.newsList{ width:691px; background:url(../images/gameViewBg.gif) repeat-y; float:left; padding:0px 25px 15px 25px;height:auto!important; min-height:633px;}
+.newsList li{ width:671px; padding-left:20px;line-height:30px; height:30px;border-bottom:1px dashed #ccc; display:inline; float:left; background:url(../images/userIco.png) 0 -65px no-repeat;}
+.newsList span{ float:right; width:121px; text-align:right; color:#555;}
+.newsList label{ float:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap; width:550px;}
+.newsList a{ color:#000; text-decoration:none;}
+.newsList a:hover{ color:#ba2636;text-decoration:underline;}
+.newsList .page{ width:681px; line-height:30px; text-align:right; margin-top:15px; overflow:hidden;}
+
+

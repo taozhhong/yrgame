@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 4.0//EN"
+        "http://www.tuckey.org/res/dtds/urlrewrite4.0.dtd">
+<urlrewrite>
+
+    <!--文章详情-->
+    <rule>
+        <from>^/news/article/id/([0-9]+)/([0-9]+)</from>
+        <to type="forward">/news/article.jsp?cateid=$1&amp;artid=$2</to>
+    </rule>
+    <!--安全隐私,关于我们，联系我们-->
+    <rule>
+        <from>^/news/cust/id/([0-9]+)/([0-9]+)</from>
+        <to type="forward">/news/cust_article.jsp?cateid=$1&amp;artid=$2</to>
+    </rule>
+    <!--文章列表-->
+    <rule>
+        <from>^/news/list/cate/([0-9]+)</from>
+        <to type="forward">/news/newslist.jsp?cateid=$1</to>
+    </rule>
+    <!--帮助列表-->
+    <rule>
+        <from>^/news/help/cate/([0-9]+)</from>
+        <to type="forward">/news/helplist.jsp?cateid=$1</to>
+    </rule>
+    <!--用户注册-->
+    <rule>
+        <from>^/reg/gamereg</from>
+        <to type="forward">/reg.jsp</to>
+    </rule>
+    <!--用户登录-->
+    <rule>
+        <from>^/reg/gamelogin</from>
+        <to type="forward">/login.jsp</to>
+    </rule>
+    <!--用户修改密码-->
+    <rule>
+        <from>^/reg/modpass</from>
+        <to type="forward">/member/ModifyPass.jsp</to>
+    </rule>
+
+</urlrewrite>

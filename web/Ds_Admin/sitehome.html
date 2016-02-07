@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>渔人游戏管理系统-登录</title>
+<link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" href="css/default/easyui.css">
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#form').form({
+                url: "/Action/UserLogin.do",
+                onSubmit: function () {
+                    var flag = $(this).form('validate');
+                    if (flag) {
+                        $("#sub_btn").attr("disable",true);
+                        $("#sub_btn").val("登录中");
+                    }
+                    return flag;
+                },
+                success: function (data) {
+                    $("#sub_btn").val("登录");
+                    $("#sub_btn").removeAttr("disable");
+                    var jsondata = eval('(' + data + ')');
+                    if (jsondata.err == "")//表示没有出错
+                    {
+                        top.location.href = "main/main.jsp";
+                    }
+                    else
+                    {
+                        $.messager.alert('提示', jsondata.err, 'error');
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <div id="login">
+	
+	     <div id="top">
+		      <div id="top_left"><img src="images/login_03.gif" /></div>
+			  <div id="top_center"></div>
+		 </div>
+		 
+		 <div id="center">
+             <form id="form" method="post">
+		      <div id="center_left"></div>
+			  <div id="center_middle">
+			       <div id="user">用 户
+			         <input type="text" id="loginname" name="loginname" class="easyui-validatebox"
+                            data-options="required:true,validType:'length[4,15]',invalidMessage:'不能少于4位',missingMessage:'请至少输入4位数帐号'"
+                            maxlength="15"/>
+			       </div>
+				   <div id="password">密   码
+				     <input type="password" id="loginpsd" name="loginpsd" class="easyui-validatebox"
+                            data-options="required:true,validType:'length[6,15]',invalidMessage:'请输入6-15的密码！',missingMessage:'请输入6-15的密码！'"
+                            maxlength="15"/>
+				   </div>
+				   <div id="btn"><input type="submit" value="登录" id="sub_btn"/><input type="reset" value="清空"/></div>
+			  
+			  </div>
+			  <div id="center_right"></div>
+                 </form>
+		 </div>
+		 <div id="down">
+		      <div id="down_left">
+			      <div id="inf">
+                       <span class="inf_text">版本信息</span>
+					   <span class="copyright">网站后台管理系统 2015 v1.0</span>
+			      </div>
+			  </div>
+			  <div id="down_center"></div>		 
+		 </div>
+	</div>
+</body>
+</html>
